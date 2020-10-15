@@ -1,1 +1,7 @@
 <h2> <%= @destination.name %> </h2>
+
+Most Recent Posts: <p><%= @destination.most_recent_posts %></p><br>
+
+Most Liked Post: <%= link_to @destination.most_liked_post, post_path(@destination.most_liked_post) %><br>
+
+Average Age of Bloggers: <%= @destination.average_blogger_age %>
